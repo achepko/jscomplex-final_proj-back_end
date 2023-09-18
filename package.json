@@ -1,0 +1,31 @@
+{
+  "name": "jscomplex-final_proj-back_end",
+  "version": "1.0.0",
+  "description": "FINAL PROJECT OKTEN - ANTON CHEPKO",
+  "main": "app.js",
+  "scripts": {
+    "start": "rimraf dist && tsc-watch --onSuccess \"npm run watch\"",
+    "watch": "nodemon \"src/app.ts\" --watch \"./src\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.4"
+  }
+}
