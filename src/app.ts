@@ -1,5 +1,4 @@
-
-const express = require('express')
+import express,{Request,Response} from "express"
 
 const managers = [
     {name: 'Anton', age: 22},
@@ -12,13 +11,13 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-app.get('/',(req, res)=>{
-    res.send({
-        message:'hello'
-    })
-})
-app.get('/managers',(req,res)=>{
-    res.status(200).json({message:'All users',data:managers})
+// app.get('/',(req, res)=>{
+//     res.send({
+//         message:'hello'
+//     })
+// })
+app.get('/managers',(req:Request,res:Response)=>{
+    res.status(200).json(managers)
 })
 
 
